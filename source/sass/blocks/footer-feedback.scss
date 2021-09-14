@@ -1,0 +1,34 @@
+.footer-feedback__form {
+  position: relative;
+}
+
+.footer-feedback__form label {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #9B9997;
+}
+
+.footer-feedback__block h2 {
+  font-family: 'CormorantGaramond', 'Georgia', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+.footer-feedback__block p {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+  color: #9B9997;
+}

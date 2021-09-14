@@ -1,0 +1,16 @@
+.footer-navigation__link {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: #ffffff;
+}
+
+.footer-navigation {
+  display: flex;
+}
+
+.footer-navigation__list--nav {
+  column-count: 2;
+}
