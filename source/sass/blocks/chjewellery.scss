@@ -1,0 +1,54 @@
+.chjewellery__heading {
+  width: 197px;
+  margin: 0 auto;
+}
+
+.chjewellery__heading h2 {
+  font-family: 'CormorantGaramond', 'Georgia', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #1D1613;
+}
+
+.chjewellery__link {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: #1D1613;
+  text-align: center;
+  margin-left: 63px;
+}
+
+.chjewellery__list {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: auto auto;
+}
+
+.chjewellery__item--three {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+.chjewellery__item--two {
+  /* grid-row-start: 1;
+  grid-row-end: 3; */
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+.chjewellery__item--four {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 3;
+  grid-column-end: 3;
+}

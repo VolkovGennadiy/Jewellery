@@ -2,8 +2,9 @@
   width: 100%;
   background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url('../../img/background-header-desktop.png');
   min-height: 463px;
-  background-size: cover;
-  background-position: center;
+  /* background-size: cover; */
+  background-position-x: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
   @media (max-width: $tablet-width) {
     background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url('../../img/background-header-tablet.jpg');
@@ -15,16 +16,16 @@
 }
 
 .header-promo__block {
-  margin-top: 183px;
+  padding-top: 142px;
 
   @media (max-width: $tablet-width) {
-    margin-top: 182px;
+    padding-top: 182px;
     margin-left: -18px;
   }
 
   @media (max-width: $mobile-width) {
-    margin-top: 188px;
-    margin-left: -1px;
+    padding-top: 188px;
+    margin-left: 0;
   }
 }
 

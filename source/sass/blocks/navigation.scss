@@ -1,12 +1,12 @@
 .navigation {
-  min-height: 175px;
+  min-height: 185px;
 
   @media (max-width: $tablet-width) {
-    min-height: 126px;
+    min-height: 96px;
   }
 
   @media (max-width: $mobile-width) {
-    min-height: 92px;
+    min-height: 72px;
   }
 }
 
@@ -30,8 +30,8 @@
   display: flex;
   width: 528px;
   margin: 0 auto;
-  padding-left: 45px;
-  padding-top: 33px;
+  padding-left: 46px;
+  padding-top: 34px;
 
   @media (max-width: $tablet-width) {
     display: none;
@@ -46,7 +46,11 @@
 }
 
 .navigation__logo-link {
-  margin-left: -6px;
+  margin-left: 2px;
+
+  @media (max-width: $tablet-width) {
+    margin-left: -5px;
+  }
 }
 
 .navigation__item {
@@ -58,7 +62,7 @@
   width: 176px;
   justify-content: flex-end;
   margin-right: 3px;
-  margin-top: 11px;
+  margin-top: 12px;
 
   @media (max-width: $tablet-width) {
     display: none;
