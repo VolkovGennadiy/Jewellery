@@ -75,7 +75,7 @@
         </button>
         <div class="main-shop__block">
           <h2>New In</h2>
-          <p>Shop Now</p>
+          <a class="main-shop__block-link" href="catalog.html">Shop Now</a>
         </div>
         <button class="main-shop__button main-shop__button--right">
           <span class="visually-hidden">Вправо</span>
@@ -196,30 +196,30 @@
       </div>
       <ul class="chjewellery__list no-bulites">
         <li class="chjewellery__item">
-          <img src="img/inst-one.jpg" width="230" height="230" alt="Золотые кольца на фоне белого ноутбука">
+          <img class="chjewellery__image" src="img/inst-one.jpg" width="230" height="230" alt="Золотые кольца на фоне белого ноутбука">
         </li>
         <li class="chjewellery__item chjewellery__item--two">
-          <img src="img/inst-two.jpg" width="230" height="150" alt="Украшение с камнями на фоне шкатулки">
+          <img class="chjewellery__image chjewellery__image--two" src="img/inst-two.jpg" width="230" height="150" alt="Украшение с камнями на фоне шкатулки">
         </li>
         <li class="chjewellery__item chjewellery__item--three">
-          <img src="img/inst-three.jpg" width="399" height="412" alt="Изображение женщины с серёжкой(ювилирное украшение)">
+          <img class="chjewellery__image--three" src="img/inst-three.jpg" width="399" height="412" alt="Изображение женщины с серёжкой(ювилирное украшение)">
         </li>
         <li class="chjewellery__item chjewellery__item--four">
-          <img src="img/inst-four.jpg" width="230" height="230" alt="Браслеты на фоне свитера">
+          <img class="chjewellery__image" src="img/inst-four.jpg" width="230" height="230" alt="Браслеты на фоне свитера">
         </li>
         <li class="chjewellery__item">
-          <img src="img/inst-five.jpg" width="230" height="150" alt="Золотые украшения на белом фоне">
+          <img class="chjewellery__image chjewellery__image--two" src="img/inst-five.jpg" width="230" height="150" alt="Золотые украшения на белом фоне">
+        </li>
+        <li class="chjewellery__item chjewellery__item--six">
+          <img class="chjewellery__image" src="img/inst-six.jpg" width="230" height="230" alt="Золотые кольца на золотом фоне">
         </li>
         <li class="chjewellery__item">
-          <img src="img/inst-six.jpg" width="230" height="230" alt="Золотые кольца на золотом фоне">
-        </li>
-        <li class="chjewellery__item">
-          <img src="img/inst-seven.jpg" width="230" height="150" alt="декоративные украшения на руках девушки">
+          <img class="chjewellery__image chjewellery__image--two" src="img/inst-seven.jpg" width="230" height="150" alt="декоративные украшения на руках девушки">
         </li>
       </ul>
     </section>
   </main>
-  <!-- <footer class="page-footer">
+  <footer class="page-footer">
     <div class="page-footer__container">
       <section class="footer-feedback">
         <div class="footer-feedback__block">
@@ -241,47 +241,55 @@
       </section>
       <section class="footer-navigation">
         <ul class="footer-navigation__list footer-navigation__list--nav no-bulites">
-          <li class="footer-navigation__item footer-navigation__item--nav">
-            <a class="footer-navigation__link" href='#'>Ordering & Payment</a>
+          <li class="footer-navigation__item footer-navigation__item--nav footer-navigation__item--order">
+            <a class="footer-navigation__link" href="#">Ordering & Payment</a>
+          </li>
+          <li class="footer-navigation__item footer-navigation__item--nav footer-navigation__item--about">
+            <a class="footer-navigation__link" href="#">About CH</a>
+          </li>
+          <li class="footer-navigation__item footer-navigation__item--nav footer-navigation__item--term">
+            <a class="footer-navigation__link" href="#">Terms & Conditions</a>
           </li>
           <li class="footer-navigation__item footer-navigation__item--nav">
-            <a class="footer-navigation__link" href='#'>About CH</a>
+            <a class="footer-navigation__link" href="#">Stores & Hours</a>
+          </li>
+          <li class="footer-navigation__item footer-navigation__item--nav footer-navigation__item--return">
+            <a class="footer-navigation__link" href="#">Returns & Exchanges</a>
           </li>
           <li class="footer-navigation__item footer-navigation__item--nav">
-            <a class="footer-navigation__link" href='#'>Terms & Conditions</a>
+            <a class="footer-navigation__link" href="#">Jobs</a>
+          </li>
+          <li class="footer-navigation__item footer-navigation__item--nav footer-navigation__item--deliv">
+            <a class="footer-navigation__link" href="#">Delivery</a>
           </li>
           <li class="footer-navigation__item footer-navigation__item--nav">
-            <a class="footer-navigation__link" href='#'>Stores & Hours</a>
-          </li>
-          <li class="footer-navigation__item footer-navigation__item--nav">
-            <a class="footer-navigation__link" href='#'>Returns & Exchanges</a>
-          </li>
-          <li class="footer-navigation__item footer-navigation__item--nav">
-            <a class="footer-navigation__link" href='#'>Jobs</a>
-          </li>
-          <li class="footer-navigation__item footer-navigation__item--nav">
-            <a class="footer-navigation__link" href='#'>Delivery</a>
-          </li>
-          <li class="footer-navigation__item footer-navigation__item--nav">
-            <a class="footer-navigation__link" href='#'>Contact Us</a>
+            <a class="footer-navigation__link" href="#">Contact Us</a>
           </li>
         </ul>
         <ul class="footer-navigation__list footer-navigation__list--social no-bulites">
           <li class="footer-navigation__item footer-navigation__item--facebook footer-navigation__item--social">
-            <a class="footer-navigation__link" href='#'>Facebook</a>
+            <a class="footer-navigation__link footer-navigation__link--mobile" href="#">
+              <span>Facebook</span>
+            </a>
           </li>
           <li class="footer-navigation__item footer-navigation__item--instagram footer-navigation__item--social">
-            <a class="footer-navigation__link" href='#'>Instagram</a>
+            <a class="footer-navigation__link footer-navigation__link--mobile" href="#">
+              <span>Instagram</span>
+            </a>
           </li>
           <li class="footer-navigation__item footer-navigation__item--pinterest footer-navigation__item--social">
-            <a class="footer-navigation__link" href='#'>Pinterest</a>
+            <a class="footer-navigation__link footer-navigation__link--mobile" href="#">
+              <span>Pinterest</span>
+            </a>
           </li>
           <li class="footer-navigation__item footer-navigation__item--twitter footer-navigation__item--social">
-            <a class="footer-navigation__link" href='#' >Twitter</a>
+            <a class="footer-navigation__link footer-navigation__link--mobile" href="#">
+              <span>Twitter</span>
+            </a>
           </li>
         </ul>
       </section>
     </div>
-  </footer> -->
+  </footer>
 </body>
 </html>

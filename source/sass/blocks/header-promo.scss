@@ -15,6 +15,11 @@
   }
 }
 
+.header-promo--catalog {
+  background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url('../../img/background-header-catalog.jpg');
+  min-height: 261px;
+}
+
 .header-promo__block {
   padding-top: 142px;
 
@@ -27,6 +32,10 @@
     padding-top: 188px;
     margin-left: 0;
   }
+}
+
+.header-promo__block--catalog {
+  padding-top: 92px;
 }
 
 .header-promo__block h1 {
@@ -50,6 +59,12 @@
   }
 }
 
+.header-promo__block--catalog h1 {
+  font-size: 34px;
+  line-height: 130%;
+  letter-spacing: 0.001em;
+}
+
 .header-promo__block p {
   font-family: 'CormorantGaramond', 'Georgia', serif;
   font-style: italic;
@@ -65,3 +80,7 @@
   }
 }
 
+.header-promo__block--catalog p {
+  font-size: 22px;
+  margin-top: 2px;
+}
