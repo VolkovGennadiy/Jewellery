@@ -67,15 +67,16 @@
       </div>
     </section>
   </header>
-  <main class="page-main">
+  <main class="page-main page-main--catalog">
     <section class="main-filter">
+      <button type="button" class="main-filter__button main-filter__button--filter">Filter</button>
       <form class="main-filter__form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="main-filter__field">
+        <fieldset class="main-filter__field main-filter__field--prodcut">
           <!-- <legend>Product</legend> -->
           <p>Product</p>
           <ul class="main-filter__list no-bulites">
             <li class="main-filter__item">
-              <input type="checkbox" name="necklaces" id="necklaces">
+              <input type="checkbox" name="necklaces" id="necklaces" aria-label="12">
               <label for="necklaces">Necklaces</label>
             </li>
             <li class="main-filter__item">
@@ -92,10 +93,10 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="main-filter__field">
+        <fieldset class="main-filter__field main-filter__field--material">
           <!-- <legend>Product</legend> -->
           <p>Material</p>
-          <ul class="main-filter__list no-bulites">
+          <ul class="main-filter__list main-filter__list--hiden no-bulites">
             <li class="main-filter__item">
               <input type="checkbox" name="gold" id="gold">
               <label for="gold">Gold</label>
@@ -106,10 +107,10 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="main-filter__field">
+        <fieldset class="main-filter__field main-filter__field--material">
           <!-- <legend>Product</legend> -->
-          <p>Material</p>
-          <ul class="main-filter__list no-bulites">
+          <p>Collection</p>
+          <ul class="main-filter__list main-filter__list--hiden no-bulites">
             <li class="main-filter__item">
               <input type="checkbox" name="pink-flamingo" id="pink-flamingo">
               <label for="pink-flamingo">Pink flamingo</label>
@@ -120,14 +121,137 @@
             </li>
           </ul>
         </fieldset>
+        <fieldset class="main-filter__field main-filter__field--material">
+          <!-- <legend>Product</legend> -->
+          <p>Price</p>
+          <div class="main-filter__range">
+            <div class="main-filter__range-scale"></div>
+            <div class="main-filter__range-toggle main-filter__range-toggle--min"></div>
+            <div class="main-filter__range-toggle main-filter__range-toggle--max"></div>
+            <div class="main-filter__consument">
+              <label class="main-filter__consument-minprice">
+                <input type="number" name="min-price" value="55">
+              </label>
+              <label class="main-filter__consument-maxprice">
+                <input type="number" name='max-price' value="155" placeholder="$">
+              </label>
+            </div>
+          </div>
+        </fieldset>
         <div class="main-filter__block">
           <button type="submit" class="main-filter__button">Apply</button>
-          <button type="submit" class="main-filter__clear">Clear All</button>
+          <button type="submit" class="main-filter__button main-filter__button--clear">Clear All</button>
         </div>
       </form>
     </section>
     <section class="main-catalog">
-
+      <ul class="main-catalog__list no-bulites">
+        <li class="main-catalog__item">
+          <a class="main-catalog__link" href="#">
+            <img class="main-catalog__image" src="img/double-pearl-earrings.jpg" width="270" height="272" alt="Серёжки на белом фоне">
+            <p>Double pearl earrings </p>
+            <span>$ 115</span>
+          </a>
+        </li>
+        <li class="main-catalog__item">
+          <a class="main-catalog__link">
+            <img class="main-catalog__image" src="img/black-choker-gold-bead.jpg" width="270" height="272" alt="Чёрное колье с золотом на белом фоне">
+            <p>Choker with gold bead</p>
+            <span>$ 55</span>
+          </a>
+        </li>
+        <li class="main-catalog__item">
+          <a class="main-catalog__link">
+            <img class="main-catalog__image" src="img/gold-layered-necklace.jpg" width="270" height="272" alt="Золотое ожерелье на белом фоне">
+            <p>Gold layered necklace</p>
+            <span>$ 155</span>
+          </a>
+        </li>
+        <li class="main-catalog__item">
+          <a class="main-catalog__link">
+            <img class="main-catalog__image" src="img/blue-gemstone-pendant.jpg" width="270" height="272" alt="Голубой кулон на белом фоне">
+            <p>Blue gemstone pendant</p>
+            <span>$ 105</span>
+          </a>
+        </li>
+        <li class="main-catalog__item">
+          <a class="main-catalog__link">
+            <img class="main-catalog__image" src="img/boho-earrings.jpg" width="270" height="272" alt="Серьги из голубого камня на белом фоне">
+            <p>Boho earrings</p>
+            <span>$ 75</span>
+          </a>
+        </li>
+        <li class="main-catalog__item">
+          <a class="main-catalog__link">
+            <img class="main-catalog__image" src="img/bird-necklace.jpg" width="270" height="272" alt="Золотая цепочка на белом фоне">
+            <p>Gold bird necklace</p>
+            <span>$ 135</span>
+          </a>
+        </li>
+        <li class="main-catalog__item">
+          <a class="main-catalog__link">
+            <img class="main-catalog__image" src="img/black-leather-choker-necklace (1).jpg" width="270" height="272" alt="Чёрный браслет из кожи на белом фоне">
+            <p>Black leather choker</p>
+            <span>$ 85</span>
+          </a>
+        </li>
+        <li class="main-catalog__item">
+          <a class="main-catalog__link">
+            <img class="main-catalog__image" src="img/purple-gemstone-necklace.jpg" width="270" height="272" alt="Кулон из аметиста на белом фоне">
+            <p>Necklace with amethyst</p>
+            <span>$ 145</span>
+          </a>
+        </li>
+        <li class="main-catalog__item">
+          <a class="main-catalog__link">
+            <img class="main-catalog__image" src="img/elephant-earrings.jpg" width="270" height="272" alt="Серьги в виде слона на белом фоне на белом фоне">
+            <p>Elephant earrings</p>
+            <span>$ 95</span>
+          </a>
+        </li>
+        <li class="main-catalog__item">
+          <a class="main-catalog__link">
+            <img class="main-catalog__image" src="img/threader-necklace-closeup.jpg" width="270" height="272" alt="Серебярянная цепочка на белом фоне">
+            <p>Threader necklace</p>
+            <span>$ 115</span>
+          </a>
+        </li>
+        <li class="main-catalog__item">
+          <a class="main-catalog__link">
+            <img class="main-catalog__image" src="img/origami-crane-necklace.jpg" width="270" height="272" alt="Серебярянная цепочка на белом фоне">
+            <p>Origami crane necklace</p>
+            <span>$ 105</span>
+          </a>
+        </li>
+        <li class="main-catalog__item">
+          <a class="main-catalog__link">
+            <img class="main-catalog__image" src="img/marble-earrings (1)2x.jpg" width="270" height="272" alt="Белые сережки на белом фоне">
+            <p>Marble earrings</p>
+            <span>$ 95</span>
+          </a>
+        </li>
+      </ul>
+      <div class="main-catalog__pagination">
+        <a class="main-catalog__pagination-link main-catalog__pagination-link--previos">Previous</a>
+        <ul class="main-catalog__pagination-list no-bulites">
+          <li class="main-catalog__pagination-item">
+            <a class="main-catalog__pagination-link main-catalog__pagination-link--active">1</a>
+          </li>
+          <li class="main-catalog__pagination-item">
+            <a class="main-catalog__pagination-link">2</a>
+          </li>
+          <li class="main-catalog__pagination-item">
+            <a class="main-catalog__pagination-link">3</a>
+          </li>
+          <li class="main-catalog__pagination-item">
+            <a class="main-catalog__pagination-link">4</a>
+          </li>
+          <li class="main-catalog__pagination-item">
+            <a class="main-catalog__pagination-link">5</a>
+          </li>
+        </ul>
+        <a class="main-catalog__pagination-link main-catalog__pagination-link--next">Next</a>
+      </div>
     </section>
   </main>
   <footer class="page-footer">

@@ -5,3 +5,22 @@
     height: 3080px;
   }
 } */
+
+.page-main--catalog {
+  display: flex;
+  width: 86vw;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-top: 80px;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    width: 88.3vw;
+    padding-top: 50px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 40px;
+    width: 90.8vw;
+  }
+}

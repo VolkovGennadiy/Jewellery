@@ -1,14 +1,244 @@
 .main-filter {
-  width: 250px;
+  width: 254px;
+}
+
+.main-filter__form {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-filter__field {
   padding-left: 0;
   padding-right: 0;
+  border: 1px solid #A87B62;
 }
 
 .main-filter__field p {
-  border: 1px solid #000;
-  margin-left: 0;
-  width: 240px;
+  /* border: 1px solid #000; */
+  position: relative;
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: #1D1613;
+  margin-left: 25px;
+  margin-top: 18px;
+  width: 223px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 8px;
+    background-image: url('../../img/acardeon-down.svg');
+    top: 5px;
+    right: 24px;
+    background-size: 100%;
+  }
 }
+
+.main-filter__list {
+  margin-left: 33px;
+  margin-top: 24px;
+}
+
+.main-filter__list--hiden {
+  display: none;
+}
+
+.main-filter__field--prodcut {
+  min-height: 187px;
+}
+
+.main-filter__field--material {
+  border-top: none;
+  min-height: 35px;
+  padding-bottom: 7px;
+}
+
+.main-filter__item {
+  margin-bottom: 9px;}
+
+.main-filter__item label {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  margin-left: 0;
+  /* width: 240px; */
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: #1D1613;
+}
+
+.main-filter__item input {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.main-filter__item input + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+      /* flex-shrink: 0;
+      flex-grow: 0; */
+    border: 1px solid #A87B62;
+    background-repeat: no-repeat;
+    /* background-position: center center;
+    background-size: 50% 50%; */
+    margin-right: 10px;
+  }
+
+  &:hover {
+    border: 1px solid #1D1613;
+  }
+}
+
+.main-filter__item input:checked + label {
+  &::before {
+    background: #A87B62;
+  }
+}
+
+.main-filter__item input:hover + label {
+  &::before {
+    border: 1px solid #1D1613;
+  }
+}
+
+.main-filter__item input:focus + label {
+  &::before {
+    border: 1px solid #1D1613;
+  }
+}
+
+.main-filter__range {
+  position: relative;
+  min-height: 54px;
+
+  &::after {
+    position: absolute;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    content: '$';
+    top: 24px;
+    left: 62px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #1D1613;
+  }
+
+  &::before {
+    position: absolute;
+    content: '$';
+    top: 24px;
+    left: 166px;
+  }
+}
+
+.main-filter__range-scale {
+  position: absolute;
+  content: '';
+  width: 90px;
+  height: 1px;
+  top: 10px;
+  left: 85px;
+  background-image: url('../../img/line.svg');
+}
+
+.main-filter__range-toggle {
+  position: absolute;
+  top: 28px;
+  background-color: #A87B62;
+  border: 8px solid var(--basik-white);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  box-shadow: 0 2px 1px 0 var(--basik-toggle);
+  cursor: pointer;
+}
+
+.main-filter__range-toggle--min {
+  top: 3px;
+  left: 69px;
+}
+
+.main-filter__range-toggle--max {
+  top: 3px;
+  left: 174px;
+}
+
+.main-filter__consument input {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: #1D1613;
+}
+
+.main-filter__consument-minprice input {
+  width: 35px;
+  position: absolute;
+  left: 72px;
+  top: 23px;
+  border: none;
+}
+
+.main-filter__consument-maxprice input {
+  width: 45px;
+  position: absolute;
+  left: 175px;
+  top: 23px;
+  border: none;
+}
+
+.main-filter__block {
+  display: flex;
+  flex-direction: column;
+  height: 161px;
+  margin-left: 2px;
+  margin-top: 34px;
+  justify-content: space-between;
+}
+
+.main-filter__button {
+  width: 250px;
+  height: 68px;
+  background-color: #A87B62;
+  border: 1px solid #A87B62;
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.main-filter__button--clear {
+  background-color: #ffffff;
+  color: #1d1613;
+}
+
+.main-filter__button--filter {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    width: 678px;
+    display: block;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 290px;
+  }
+}
+

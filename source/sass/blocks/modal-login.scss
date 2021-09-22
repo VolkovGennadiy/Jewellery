@@ -1,0 +1,116 @@
+.modal-login {
+  visibility: visible;
+  opacity: 1;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  left: 0px;
+  border-top: 7px solid var(--basik-red);
+  width: 430px;
+  max-height: 586px;
+  background-color: #f0eae4;;
+  margin: auto;
+  z-index: 10000;
+  border: 1px solid red;
+}
+
+.modal-login__header {
+  position: relative;
+  background-image: url('../../img/background-login.jpg');
+  z-index: 11000;
+  height: 138px;
+}
+
+.modal-login__close {
+  position: absolute;
+}
+
+.modal-login h2 {
+  font-family: 'CormorantGaramond', 'Georgia', serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 130%;
+  color: #1D1613;
+}
+
+.modal-login__form {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  margin: 0 auto;
+}
+
+.modal-login__block {
+  position: relative;
+}
+
+.modal-login__block--email {
+  margin-bottom: 20px;
+}
+
+.modal-login__block label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #9B9997;
+}
+
+.modal-login__block input {
+  width: 340px;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid #1D1613;
+}
+
+.modal-login__link {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #9B9997;
+}
+
+.modal-login__button {
+  width: 340px;
+  height: 68px;
+  border: none;
+  outline: none;
+  background-color: #A87B62;
+  border: 1px solid #A87B62;
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+
+.main-login__sign {
+  display: flex;
+}
+
+.main-login__sign p {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #9B9997;
+}
+
+.modal-login__sign-link {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1D1613;
+}
