@@ -24,23 +24,23 @@
           <input id="navigation__field" type="search" name="search">
           <label aria-label="search" for="navigation__field">Type here to search</label>
         </form>
-        <a class="navigation__logo-link" href="#">
-          <svg class="naviagation__logo" width="66" height="66" viewBox="0 0 66 66">
+        <a class="navigation__logo-link navigation__logo-link--link" href="#">
+          <svg class="navigation__logo" width="66" height="66" viewBox="0 0 66 66">
             <use xlink:href="#navigation__image"></use>
           </svg>
         </a>
         <button class="navigation__button-login">
-          <span class="visually-hidden">Пользователь</span>
+          <span class="visually-hidden">Корзина</span>
         </button>
         <div class="navigation__user">
-          <a class="navigation__login">Login</a>
+          <a class="navigation__login" href="login.html">Login</a>
           <div class="navigation__blockcart">
             <a class="navigation__cart" href="#">Cart</a>
             <span class="navigation__cart-value">0</span>
           </div>
         </div>
       </div>
-      <nav class="navigation__menu navigation__menu--mobile">
+      <nav class="navigation__menu">
         <ul class="navigation__list no-bulites">
           <li class="navigation__item">
             <a class="navigation__link" href="#">What’s new</a>
@@ -56,6 +56,18 @@
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="#">Earrings</a>
+          </li>
+          <li class="navigation__next navigation__next--modify">
+            <a class="navigation__next__link" href="#">About CH</a>
+          </li>
+          <li class="navigation__next">
+            <a class="navigation__next__link" href="#">Stores & Hours</a>
+          </li>
+          <li class="navigation__next navigation__next--contact">
+            <a class="navigation__next__link" href="#">Contact Us</a>
+          </li>
+          <li class="navigation__next">
+            <a class="navigation__mobile-link" href="#">Login</a>
           </li>
         </ul>
       </nav>
@@ -167,23 +179,23 @@
     <section class="questions">
       <h2>Frequently asked questions</h2>
       <ul class="questions__list no-bulites">
-        <li class="questions__item questions__item--active">
-          <a class="questions__link" href="#">What materials are the jewellery made of?</a>
+        <li class="questions__item">
+          <p class="questions__link" href="#">What materials are the jewellery made of?</p>
+          <span class="questions__span">Our jewellerry is made of solid gold, silver or leather. &nbsp; Also, some jewellery contains precious and semiprecious stones and crystals.
+          </span>
+        </li>
+        <li class="questions__item questions__item--border questions__item--del">
+          <p class="questions__link questLink" href="#">Which countries do you deliver to?</p>
           <span>Our jewellerry is made of solid gold, silver or leather. &nbsp; Also, some jewellery contains precious and semiprecious stones and crystals.
           </span>
         </li>
-        <li class="questions__item questions__item--border">
-          <a class="questions__link questions__link--deliver" href="#">Which countries do you deliver to?</a>
+        <li class="questions__item questions__item--border questions__item--met">
+          <p class="questions__link questions__link--method" href="#">What are the payment methods?</p>
           <span>Our jewellerry is made of solid gold, silver or leather. &nbsp; Also, some jewellery contains precious and semiprecious stones and crystals.
           </span>
         </li>
-        <li class="questions__item questions__item--border">
-          <a class="questions__link questions__link--method" href="#">What are the payment methods?</a>
-          <span>Our jewellerry is made of solid gold, silver or leather. &nbsp; Also, some jewellery contains precious and semiprecious stones and crystals.
-          </span>
-        </li>
-        <li class="questions__item questions__item--border">
-          <a class="questions__link questions__link--fit" href="#">Can I return the <br class="questions__link--br">jewellery if it didn’t fit me?</a>
+        <li class="questions__item questions__item--border questions__item--fit">
+          <p class="questions__link questions__link--fit">Can I return the <br class="questions__link--br">jewellery if it didn’t fit me?</p>
           <span>Our jewellerry is made of solid gold, silver or leather. &nbsp; Also, some jewellery contains precious and semiprecious stones and crystals.
           </span>
         </li>
@@ -202,7 +214,7 @@
           <img class="chjewellery__image chjewellery__image--two" src="img/inst-two.jpg" width="230" height="150" alt="Украшение с камнями на фоне шкатулки">
         </li>
         <li class="chjewellery__item chjewellery__item--three">
-          <img class="chjewellery__image--three" src="img/inst-three.jpg" width="399" height="412" alt="Изображение женщины с серёжкой(ювилирное украшение)">
+          <img class="chjewellery__image chjewellery__image--three" src="img/inst-three.jpg" width="399" height="412" alt="Изображение женщины с серёжкой(ювилирное украшение)">
         </li>
         <li class="chjewellery__item chjewellery__item--four">
           <img class="chjewellery__image" src="img/inst-four.jpg" width="230" height="230" alt="Браслеты на фоне свитера">
@@ -219,7 +231,7 @@
       </ul>
     </section>
   </main>
-  <!-- <footer class="page-footer">
+  <footer class="page-footer">
     <div class="page-footer__container">
       <section class="footer-feedback">
         <div class="footer-feedback__block">
@@ -242,55 +254,55 @@
       <section class="footer-navigation">
         <ul class="footer-navigation__list footer-navigation__list--nav no-bulites">
           <li class="footer-navigation__item footer-navigation__item--nav footer-navigation__item--order">
-            <a class="footer-navigation__link" href='#'>Ordering & Payment</a>
+            <a class="footer-navigation__link" href="#">Ordering & Payment</a>
           </li>
           <li class="footer-navigation__item footer-navigation__item--nav footer-navigation__item--about">
-            <a class="footer-navigation__link" href='#'>About CH</a>
+            <a class="footer-navigation__link" href="#">About CH</a>
           </li>
           <li class="footer-navigation__item footer-navigation__item--nav footer-navigation__item--term">
-            <a class="footer-navigation__link" href='#'>Terms & Conditions</a>
+            <a class="footer-navigation__link" href="#">Terms & Conditions</a>
           </li>
           <li class="footer-navigation__item footer-navigation__item--nav">
-            <a class="footer-navigation__link" href='#'>Stores & Hours</a>
+            <a class="footer-navigation__link" href="#">Stores & Hours</a>
           </li>
           <li class="footer-navigation__item footer-navigation__item--nav footer-navigation__item--return">
-            <a class="footer-navigation__link" href='#'>Returns & Exchanges</a>
+            <a class="footer-navigation__link" href="#">Returns & Exchanges</a>
           </li>
           <li class="footer-navigation__item footer-navigation__item--nav">
-            <a class="footer-navigation__link" href='#'>Jobs</a>
+            <a class="footer-navigation__link" href="#">Jobs</a>
           </li>
           <li class="footer-navigation__item footer-navigation__item--nav footer-navigation__item--deliv">
-            <a class="footer-navigation__link" href='#'>Delivery</a>
+            <a class="footer-navigation__link" href="#">Delivery</a>
           </li>
           <li class="footer-navigation__item footer-navigation__item--nav">
-            <a class="footer-navigation__link" href='#'>Contact Us</a>
+            <a class="footer-navigation__link" href="#">Contact Us</a>
           </li>
         </ul>
         <ul class="footer-navigation__list footer-navigation__list--social no-bulites">
           <li class="footer-navigation__item footer-navigation__item--facebook footer-navigation__item--social">
-            <a class="footer-navigation__link footer-navigation__link--mobile" href='#'>
+            <a class="footer-navigation__link footer-navigation__link--mobile" href="#">
               <span>Facebook</span>
             </a>
           </li>
           <li class="footer-navigation__item footer-navigation__item--instagram footer-navigation__item--social">
-            <a class="footer-navigation__link footer-navigation__link--mobile" href='#'>
+            <a class="footer-navigation__link footer-navigation__link--mobile" href="#">
               <span>Instagram</span>
             </a>
           </li>
           <li class="footer-navigation__item footer-navigation__item--pinterest footer-navigation__item--social">
-            <a class="footer-navigation__link footer-navigation__link--mobile" href='#'>
+            <a class="footer-navigation__link footer-navigation__link--mobile" href="#">
               <span>Pinterest</span>
             </a>
           </li>
           <li class="footer-navigation__item footer-navigation__item--twitter footer-navigation__item--social">
-            <a class="footer-navigation__link footer-navigation__link--mobile" href='#'>
+            <a class="footer-navigation__link footer-navigation__link--mobile" href="#">
               <span>Twitter</span>
             </a>
           </li>
         </ul>
       </section>
     </div>
-  </footer> -->
+  </footer>
   <div class="modal-login">
     <div class="modal-login__header">
       <button type="button" class="modal-login__close">
@@ -300,16 +312,16 @@
     <h2>Log In</h2>
     <form class="modal-login__form" action="https://echo.htmlacademy.ru" method="post">
       <div class="modal-login__block modal-login__block--email">
-        <input type="email" id="email" name="email">
-        <label for="email">Your E-mail</label>
+        <input type="email" id="email" name="email" required="">
+        <label class="modal-login__label-email" for="email">Your E-mail</label>
       </div>
       <div class="modal-login__block">
         <input type="password" id="password" name="password">
-        <label for="password">Password</label>
+        <label class="modal-login__label-password" for="password">Password</label>
       </div>
       <a class="modal-login__link">Forgot your password?</a>
       <button type="submit" class="modal-login__button">Log In</button>
-      <div class="main-login__sign">
+      <div class="modal-login__sign">
         <p>Don’t have an account?</p>
         <a class="modal-login__sign-link">Sign up</a>
       </div>
@@ -342,7 +354,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="main-filter__field main-filter__field--material main-filter__list--modalmaterial">
+      <fieldset class="main-filter__field main-filter__field--material main-filter__field--modalmaterial">
         <!-- <legend>Product</legend> -->
         <p>Material</p>
         <ul class="main-filter__list main-filter__list--hiden no-bulites">
@@ -356,7 +368,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="main-filter__field main-filter__field--material main-filter__list--modalcollection">
+      <fieldset class="main-filter__field main-filter__field--material main-filter__field--modalcollection">
         <!-- <legend>Product</legend> -->
         <p>Collection</p>
         <ul class="main-filter__list main-filter__list--hiden no-bulites">
@@ -370,7 +382,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="main-filter__field main-filter__field--material main-filter__list--modalprice">
+      <fieldset class="main-filter__field main-filter__field--material main-filter__field--modalprice">
         <!-- <legend>Product</legend> -->
         <p>Price</p>
         <div class="main-filter__range main-filter__range--modal">
@@ -393,6 +405,7 @@
       </div>
     </form>
   </div>
+  <div class="overlay"></div>
   <script src="js/main.js" type="module"></script>
 </body>
 </html>

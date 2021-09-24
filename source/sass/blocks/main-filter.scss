@@ -287,7 +287,7 @@
   }
 }
 
-.main-filter__list--modalmaterial, .main-filter__list--modalcollection {
+.main-filter__field--modalmaterial, .main-filter__field--modalcollection {
   border: none;
   border-bottom: 1px solid #A87B62;
   margin: 0;
@@ -310,8 +310,8 @@
   }
 }
 
-.main-filter__field--modal p, .main-filter__list--modalmaterial p, 
-.main-filter__list--modalcollection p, .main-filter__list--modalprice p{
+.main-filter__field--modal p, .main-filter__field--modalmaterial p,
+.main-filter__field--modalcollection p, .main-filter__field--modalprice p{
   margin-top: 28px;
   margin-left: 41px;
   font-size: 18px;

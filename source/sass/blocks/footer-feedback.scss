@@ -1,8 +1,12 @@
 .footer-feedback {
-  min-width: 506px;
+  width: 50%;
+
+  @media (max-width: $tablet-width) {
+    width: 80%;
+  }
 
   @media (max-width: $mobile-width) {
-    min-width: 290px;
+    width: 290px;
   }
 }
 
@@ -15,7 +19,7 @@
   background-color: #000000;
   border: none;
   outline: none;
-  width: 350px;
+  max-width: 350px;
   height: 30px;
   font-size: 14px;
   line-height: 21px;
@@ -92,6 +96,8 @@
   display: flex;
   padding-top: 22px;
   margin-left: 2px;
+  max-width: 504px;
+  justify-content: space-between;
 
   &::after {
     position: absolute;
@@ -114,6 +120,10 @@
       width: 290px;
       left: -5px;
     }
+  }
+
+  @media (max-width: $tablet-width) {
+    max-width: 565px;
   }
 
   @media (max-width: $mobile-width) {

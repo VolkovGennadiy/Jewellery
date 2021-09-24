@@ -65,6 +65,8 @@
   padding-top: 43px;
   padding-left: 42px;
   padding-bottom: 9px;
+  margin-top: 0;
+  margin-bottom: 0;
 
   @media (max-width: $tablet-width) {
     padding-left: 49px;
@@ -102,6 +104,12 @@
       right: -60px;
       top: 22px;
     }
+  }
+}
+
+.questions__link--toggledown {
+  &::after {
+    background-image: url('../../img/acardeon-up.svg');
   }
 }
 
@@ -184,6 +192,14 @@
     padding-bottom: 18px;
   }
 }
+
+/* .questions__span {
+  display: none;
+}
+
+.questions__span--active {
+  display: block;
+} */
 
 .questions__item--active span {
   display: block;

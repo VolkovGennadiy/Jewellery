@@ -1,6 +1,5 @@
 .modal-login {
   visibility: hidden;
-  opacity: 1;
   position: fixed;
   z-index: 1;
   top: 0px;
@@ -22,7 +21,11 @@
     width: 270px;
     max-height: 470px;
   }
-} 
+}
+
+.modal-login--open {
+  visibility: visible;
+}
 
 .modal-login__header {
   position: relative;
@@ -61,6 +64,10 @@
     right: 12px;
     background-size: 70%;
   }
+}
+
+.modal-login__close--login {
+  display: none;
 }
 
 .modal-login h2 {
@@ -127,6 +134,7 @@
   line-height: 21px;
   color: #9B9997;
   background-color: transparent;
+  outline: none;
 
   @media (max-width: $mobile-width) {
     width: 237px;
@@ -165,7 +173,7 @@
   }
 }
 
-.main-login__sign {
+.modal-login__sign {
   display: flex;
   margin-left: 53px;
 
@@ -174,7 +182,7 @@
   }
 }
 
-.main-login__sign p {
+.modal-login__sign p {
   font-family: 'Poppins', 'Arial', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -196,4 +204,12 @@
   @media (max-width: $mobile-width) {
     margin-left: 5px;
   }
+}
+
+.modal-login--none {
+  display: none;
+}
+
+.modal-login--nojs {
+  visibility: visible;
 }
