@@ -1,3 +1,15 @@
+.questions {
+  min-height: 686px;
+
+  @media (max-width: $tablet-width) {
+    min-height: 651px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 590px;
+  }
+}
+
 .questions h2 {
   font-family: 'CormorantGaramond', 'Georgia', serif;
   font-style: normal;
@@ -11,7 +23,7 @@
 
   @media (max-width: $mobile-width) {
     width: 245px;
-    text-align: center  ;
+    text-align: center;
   }
 }
 
@@ -99,6 +111,7 @@
   @media (max-width: $mobile-width) {
     width: 154px;
     padding-top: 17px;
+    padding-bottom: 20px;
   }
 
   &::after {
@@ -113,6 +126,7 @@
 
   @media (max-width: $mobile-width)  {
     width: 162px;
+    padding-bottom: 21px;
   }
 
   &::after {
@@ -128,6 +142,7 @@
   @media (max-width: $mobile-width) {
     width: 221px;
     padding-top: 17px;
+    padding-bottom: 20px;
   }
 
   &::after {

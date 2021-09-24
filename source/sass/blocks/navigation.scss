@@ -10,6 +10,18 @@
   }
 }
 
+.navigation--catalog {
+  min-height: 146px;
+
+  @media (max-width: $tablet-width) {
+    min-height: 96px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 72px;
+  }
+}
+
 .navigation__user-block {
   display: flex;
   justify-content: space-between;
@@ -43,6 +55,10 @@
     width: 52px;
     height: 52px;
   }
+}
+
+.naviagation__logo--tablet {
+  filter: brightness(3);
 }
 
 .navigation__logo-link {
@@ -91,6 +107,11 @@
     margin-top: 13px;
     margin-left: -4px;
   }
+}
+
+.navigation__button--tablet {
+  background-image: url('../../img/gamgurger-white.svg');
+  background-color: #A87B62;
 }
 
 .navigation__button-login {
