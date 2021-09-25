@@ -1,0 +1,141 @@
+.main-catalog {
+  min-height: 1628px;
+
+  @media (max-width: $tablet-width) {
+    min-height: 1422px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 1606px;
+  }
+}
+
+.main-catalog__list {
+  width: 80vw;
+  max-width: 870px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (max-width: $tablet-width) {
+    width: 678px;
+    padding-top: 50px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 290px;
+    padding-top: 40px;
+  }
+}
+
+.main-catalog__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 36px;
+
+  &:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 25px;
+  }
+}
+
+.main-catalog__link p {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: #1D1613;
+  margin-top: 21px;
+  margin-bottom: 7px;
+
+  @media (max-width: $mobile-width) {
+    width: 123px;
+    text-align: center;
+    margin-top: 18px;
+  }
+}
+
+.main-catalog__link span {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 130%;
+  color: #1D1613;
+}
+
+.main-catalog__image {
+  @media (max-width: $tablet-width) {
+    width: 206px;
+    height: 208px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 130px;
+    height: 136px;
+  }
+}
+
+.main-catalog__pagination {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 37px;
+
+  @media (max-width: $mobile-width) {
+    justify-content: center;
+    padding-top: 14px;
+  }
+}
+
+.main-catalog__pagination-link {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: #1D1613;
+}
+
+.main-catalog__pagination-list {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  display: flex;
+  width: 96px;
+  justify-content: space-between;
+  margin-left: -38px;
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+    width: 137px;
+  }
+}
+
+.main-catalog__pagination-link {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: #9B9997;
+
+  &:hover {
+    color: #A87B62;
+  }
+}
+
+.main-catalog__pagination-link--active {
+  color: #1D1613;
+}
+
+.main-catalog__pagination-link--previos, .main-catalog__pagination-link--next {
+  color: #1D1613;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}

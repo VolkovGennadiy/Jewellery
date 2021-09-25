@@ -1,35 +1,35 @@
 @font-face {
-  font-family: "PT Mono";
-  font-weight: 400;
+  font-family: "Poppins";
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
   src:
-    local("PT Mono"),
-    local("PTMONO"),
-    url("/fonts/PTMono.woff2") format("woff2"),
-    url("/fonts/PTMono.woff") format("woff");
+    local("Poppins"),
+    local("POPPINS"),
+    url("/fonts/poppins-medium.woff2") format("woff2"),
+    url("/fonts/poppins-medium.woff") format("woff");
 }
 
-/* @font-face {
-  font-family: "Roboto Condensed";
+@font-face {
+  font-family: "CormorantGaramond";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
   src:
-    local("Roboto Condensed Bold"),
-    local("RobotoCondensedBold"),
-    url("/fonts/RobotoCondensedBold.woff2") format("woff2"),
-    url("/fonts/RobotoCondensedBold.woff") format("woff");
+    local("CormorantGaramond-bold"),
+    local("CORMORANTGARAMOND-BOLD"),
+    url("/fonts/CormorantGaramond-Bold.woff2") format("woff2"),
+    url("/fonts/CormorantGaramond-Bold.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Roboto Condensed";
-  font-weight: 400;
-  font-style: normal;
+  font-family: "CormorantGaramond";
+  font-weight: 700;
+  font-style: italic;
   font-display: swap;
   src:
-    local("Roboto Condensed Regular"),
-    local("RobotoCondensedRegular"),
-    url("/fonts/RobotoCondensedRegular.woff2") format("woff2"),
-    url("/fonts/RobotoCondensedRegular.woff") format("woff");
-} */
+    local("CormorantGaramond-italic"),
+    local("CORMORANTGARAMOND-ITALIC"),
+    url("/fonts/CormorantGaramond-Italic.woff2") format("woff2"),
+    url("/fonts/CormorantGaramond-Italic.woff") format("woff");
+}

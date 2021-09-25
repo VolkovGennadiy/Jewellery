@@ -1,0 +1,236 @@
+.main-shop {
+  min-height: 740px;
+
+  @media (max-width: $tablet-width) {
+    min-height: 715px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 486px;
+  }
+}
+
+.main-shop__heading {
+  width: 88vw;
+  max-width: 1190px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 54px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 42px;
+    width: 90vw;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 32px;
+    width: 104px;
+  }
+}
+
+.main-shop__block h2 {
+  font-family: 'CormorantGaramond', 'Georgia', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 130%;
+  color: #1d1613;
+  margin-bottom: 25px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 15px;
+  }
+}
+
+.main-shop__block-link {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 123%;
+  text-align: center;
+  color: #1d1613;
+  border-bottom: 1px solid #A87B62;
+  width: 81px;
+  margin-left: 10px;
+
+  &:hover {
+    color: #A87B62;
+  }
+
+  @media (max-width: $tablet-width) {
+    line-height: 180%;
+  }
+}
+
+.main-shop__button {
+  width: 40px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 36px;
+
+  @media (max-width: $tablet-width) {
+    background-size: 100%;
+    width: 40px;
+    height: 25px;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.main-shop__button--left {
+  background-image: url('../img/slide-arrow-left.svg');
+  margin-left: 6px;
+}
+
+.main-shop__button--right {
+  background-image: url('../img/slide-arrow-right.svg');
+  margin-right: 6px;
+}
+
+.main-shop__list {
+  display: flex;
+  max-width: 1171px;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-top: 60px;
+
+  @media (max-width: $tablet-width) {
+    max-width: 678px;
+    margin-top: 52px;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 290px;
+    margin-top: 41px;
+  }
+}
+
+.main-shop__item--tablet {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-shop__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 356px;
+
+  &:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 225px;
+  }
+}
+
+.main-shop__image {
+  width: 24vw;
+  max-width: 270px;
+
+  @media (max-width: $tablet-width) {
+    width: 324px;
+    max-width: 324px;
+    height: 340px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 130px;
+    height: 136px;
+  }
+}
+
+.main-shop__link p {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: #1D1613;
+  margin-top: 22px;
+  margin-bottom: 5px;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 18px;
+  }
+}
+
+.main-shop__link--ametist p {
+  @media (max-width: $tablet-width) {
+    margin-left: 14px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: 4px;
+    text-align: center;
+  }
+}
+
+.main-shop__link--ametist {
+  @media (max-width: $mobile-width) {
+    width: 130px;
+  }
+}
+
+.main-shop__link span {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 130%;
+  color: #1D1613;
+}
+
+.main-shop__list-pagination {
+  display: flex;
+  width: 49px;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-top: 47px;
+
+  @media (max-width: $tablet-width) {
+    width: 119px;
+    margin-top: 44px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 27px;
+  }
+}
+
+.main-shop__item-pagination--tablet {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.main-shop__link-pagination {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: #9B9997;
+
+  &:hover {
+    color: #A87B62;
+  }
+}
+
+.main-shop__link-pagination--active {
+  color: #1D1613;
+}

@@ -1,0 +1,211 @@
+.questions {
+  min-height: 686px;
+
+  @media (max-width: $tablet-width) {
+    min-height: 651px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 590px;
+  }
+}
+
+.questions h2 {
+  font-family: 'CormorantGaramond', 'Georgia', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #1D1613;
+  margin: 0 auto;
+  width: 388px;
+
+  @media (max-width: $mobile-width) {
+    width: 245px;
+    text-align: center;
+  }
+}
+
+.questions__list {
+  width: 970px;
+  margin: 0 auto;
+  padding-top: 48px;
+
+  @media (max-width: $tablet-width) {
+    width: 678px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 290px;
+    padding-top: 28px;
+  }
+}
+
+.questions__item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #A87B62;
+  min-height: 110px;
+  cursor: pointer;
+}
+
+.questions__item--border {
+  border-top: none;
+  min-height: 81px;
+}
+
+.questions__link {
+  position: relative;
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  color: #1D1613;
+  padding-top: 43px;
+  padding-left: 42px;
+  padding-bottom: 9px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 49px;
+    padding-bottom: 27px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 23px;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    font-size: 16px;
+    width: 183px;
+    line-height: 140%;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-image: url('../img/acardeon-down.svg');
+    background-repeat: no-repeat;
+    right: 50px;
+    top: 50px;
+
+    @media (max-width: $tablet-width) {
+      width: 26px;
+      height: 25px;
+      background-size: 100%;
+      right: 48px;
+      top: 48px;
+    }
+
+    @media (max-width: $mobile-width) {
+      right: -60px;
+      top: 22px;
+    }
+  }
+}
+
+.questions__link--toggledown {
+  &::after {
+    background-image: url('../img/acardeon-up.svg');
+  }
+}
+
+.questions__link--deliver {
+  padding-bottom: 43px;
+
+  @media (max-width: $mobile-width) {
+    width: 154px;
+    padding-top: 17px;
+    padding-bottom: 20px;
+  }
+
+  &::after {
+    @media (max-width: $mobile-width) {
+      right: -90px;
+    }
+  }
+}
+
+.questions__link--method {
+  padding-bottom: 43px;
+
+  @media (max-width: $mobile-width)  {
+    width: 162px;
+    padding-bottom: 21px;
+  }
+
+  &::after {
+    @media (max-width: $mobile-width) {
+      right: -82px;
+    }
+  }
+}
+
+.questions__link--fit {
+  padding-bottom: 45px;
+
+  @media (max-width: $mobile-width) {
+    width: 221px;
+    padding-top: 17px;
+    padding-bottom: 20px;
+  }
+
+  &::after {
+    @media (max-width: $mobile-width) {
+      right: -24px;
+    }
+  }
+}
+
+.questions__link--br {
+  display: none;
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
+}
+
+.questions__item span {
+  display: none;
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+  color: #1D1613;
+  margin-left: 49px;
+  width: 510px;
+  padding-bottom: 43px;
+
+  @media (max-width: $tablet-width) {
+    width: 535px;
+    padding-bottom: 45px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 205px;
+    margin-left: 24px;
+    font-size: 14px;
+    line-height: 145%;
+    padding-bottom: 18px;
+  }
+}
+
+/* .questions__span {
+  display: none;
+}
+
+.questions__span--active {
+  display: block;
+} */
+
+.questions__item--active span {
+  display: block;
+}
+
+.questions--nojs span {
+  display: block;
+}

@@ -1,0 +1,156 @@
+.chjewellery {
+  min-height: 704px;
+
+  @media (max-width: $tablet-width) {
+    min-height: 469px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 566px;
+  }
+}
+
+.chjewellery__heading {
+  width: 197px;
+  margin: 0 auto;
+  min-height: 160px;
+
+  @media (max-width: $tablet-width) {
+    min-height: 149px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 134px;
+  }
+}
+
+.chjewellery__heading h2 {
+  font-family: 'CormorantGaramond', 'Georgia', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #1D1613;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 19px;
+  }
+}
+
+.chjewellery__link {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: #1D1613;
+  text-align: center;
+  margin-left: 63px;
+
+  &:hover {
+    color: #A87B62;
+  }
+}
+
+.chjewellery__list {
+  width: 97vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
+  row-gap: 30px;
+  column-gap: 26px;
+
+  @media (max-width: $tablet-width) {
+    width: 88vw;
+    max-width: 801px;
+    column-gap: 16px;
+    row-gap: 16px;
+  }
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    max-width: 290px;
+    column-gap: 24px;
+    row-gap: 23px;
+  }
+}
+
+.chjewellery__image {
+  width: 18vw;
+  max-width: 230px;
+
+  @media (max-width: $tablet-width) {
+    width: 17vw;
+    height: 17vw;
+    min-width: 133px;
+    min-height: 133px;
+  }
+}
+
+.chjewellery__image--three {
+  width: 30vw;
+  max-width: 399px;
+
+  @media (max-width: $tablet-width) {
+    width: 17vw;
+    height: 29vw;
+    min-width: 231px;
+    min-height: 240px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-width: 133px;
+    min-height: 247px;
+  }
+}
+
+.chjewellery__image--two {
+  @media (max-width: $tablet-width) {
+    width: 17vw;
+    height: 10vw;
+    min-width: 133px;
+    min-height: 87px;
+  }
+}
+
+.chjewellery__item--three {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  /* width: 30vw;
+  max-width: 399px; */
+}
+
+.chjewellery__item--two {
+  /* grid-row-start: 1;
+  grid-row-end: 3; */
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+.chjewellery__item--four {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 3;
+  grid-column-end: 3;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.chjewellery__item--six {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 4;
+  grid-column-end: 4;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
