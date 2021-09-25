@@ -11,7 +11,8 @@
 }
 
 .main-catalog__list {
-  width: 870px;
+  width: 80vw;
+  max-width: 870px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -19,6 +20,7 @@
   @media (max-width: $tablet-width) {
     width: 678px;
     padding-top: 50px;
+    margin: 0 auto;
   }
 
   @media (max-width: $mobile-width) {
@@ -32,6 +34,10 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 36px;
+
+  &:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  }
 
   @media (max-width: $mobile-width) {
     margin-bottom: 25px;
@@ -116,6 +122,10 @@
   font-size: 16px;
   line-height: 130%;
   color: #9B9997;
+
+  &:hover {
+    color: #A87B62;
+  }
 }
 
 .main-catalog__pagination-link--active {

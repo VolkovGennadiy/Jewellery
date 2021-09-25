@@ -1,4 +1,5 @@
-'use strict';
+'use strict'
+const pageQuestions = document.querySelector('.questions');
 const navBtn = document.querySelector('.navigation__button');
 const pageHeader = document.querySelector('.page-header');
 const logo = document.querySelector('.navigation__logo');
@@ -29,6 +30,12 @@ const questLinkFit = document.querySelector('.questions__link--fit');
 questItem.addEventListener('click', function (evt) {
   questItem.classList.toggle('questions__item--active');
   questLink.classList.toggle('questions__link--toggledown');
+  questMet.classList.remove('questions__item--active');
+  questFit.classList.remove('questions__item--active');
+  questItemDel.classList.remove('questions__item--active');
+  questLinkMet.classList.toremove('questions__link--toggledown');
+  questLinkDel.classList.remove('questions__link--toggledown');
+  questLinkFit.classList.remove('questions__link--toggledown');
 })
 
 questItemDel.addEventListener('click', function (evt) {
@@ -38,6 +45,9 @@ questItemDel.addEventListener('click', function (evt) {
   questLink.classList.remove('questions__link--toggledown');
   questMet.classList.remove('questions__item--active');
   questFit.classList.remove('questions__item--active');
+  questLinkMet.classList.toremove('questions__link--toggledown');
+  questLink.classList.remove('questions__link--toggledown');
+  questLinkFit.classList.remove('questions__link--toggledown');
 })
 
 questMet.addEventListener('click', function (evt) {
@@ -45,15 +55,21 @@ questMet.addEventListener('click', function (evt) {
   questLinkMet.classList.toggle('questions__link--toggledown');
   questFit.classList.remove('questions__item--active');
   questItem.classList.remove('questions__item--active');
-  questItem.classList.remove('questions__item--active');
+  questItemDel.classList.remove('questions__item--active');
+  questLinkDel.classList.remove('questions__link--toggledown');
+  questLink.classList.remove('questions__link--toggledown');
+  questLinkFit.classList.remove('questions__link--toggledown');
 })
 
 questFit.addEventListener('click', function (evt) {
   questFit.classList.toggle('questions__item--active');
   questLinkFit.classList.toggle('questions__link--toggledown');
-  questFit.classList.remove('questions__item--active');
   questItem.classList.remove('questions__item--active');
-  questItem.classList.remove('questions__item--active');
+  questMet.classList.remove('questions__item--active');
+  questItemDel.classList.remove('questions__item--active');
+  questLinkMet.classList.remove('questions__link--toggledown');
+  questLinkDel.classList.remove('questions__link--toggledown');
+  questLink.classList.remove('questions__link--toggledown');
 })
 
 
@@ -91,12 +107,14 @@ loginBtn.addEventListener('click', function (evt) {
   loginModal.classList.add('modal-login--open');
   overlay.classList.add('overlay__active');
   yourEmail.focus();
+  pageBody.classList.toggle('page-body--overflow');
 });
 
 loginBtnClose.addEventListener('click', function (evt) {
   evt.preventDefault();
   loginModal.classList.remove('modal-login--open');
   overlay.classList.remove('overlay__active');
+  pageBody.classList.remove('page-body--overflow');
 })
 
 overlay.addEventListener('click', function (evt) {
@@ -112,4 +130,24 @@ window.addEventListener('keydown', function (evt ) {
   }
 })
 
+let width = 300
+let count = 4;
 
+let list = document.querySelector('.main-shop__list');
+let listElems = document.querySelectorAll('.main-shop__item');
+
+let position = 0;
+
+document.querySelector('.main-shop__button--left').onclick = function() {
+  position += width * count;
+  position = Math.min(position, 0)
+  list.style.marginLeft = position + 'px';
+};
+
+document.querySelector('.main-shop__button--right').onclick = function() {
+  position -= width * count;
+  position = Math.max(position, -width * (listElems.length - count));
+  list.style.marginLeft = position + 'px';
+};
+
+pageQuestions.classList.remove('questions--nojs')

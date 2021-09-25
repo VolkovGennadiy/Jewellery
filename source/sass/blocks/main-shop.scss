@@ -1,5 +1,5 @@
 .main-shop {
-  min-height: 779px;
+  min-height: 740px;
 
   @media (max-width: $tablet-width) {
     min-height: 715px;
@@ -17,7 +17,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 93px;
+  padding-top: 54px;
 
   @media (max-width: $tablet-width) {
     padding-top: 42px;
@@ -56,6 +56,10 @@
   width: 81px;
   margin-left: 10px;
 
+  &:hover {
+    color: #A87B62;
+  }
+
   @media (max-width: $tablet-width) {
     line-height: 180%;
   }
@@ -84,12 +88,12 @@
 }
 
 .main-shop__button--left {
-  background-image: url('../../img/slide-arrow-left.svg');
+  background-image: url('../img/slide-arrow-left.svg');
   margin-left: 6px;
 }
 
 .main-shop__button--right {
-  background-image: url('../../img/slide-arrow-right.svg');
+  background-image: url('../img/slide-arrow-right.svg');
   margin-right: 6px;
 }
 
@@ -122,6 +126,10 @@
   flex-direction: column;
   align-items: center;
   min-height: 356px;
+
+  &:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  }
 
   @media (max-width: $mobile-width) {
     min-height: 225px;
@@ -217,10 +225,12 @@
   font-size: 16px;
   line-height: 130%;
   color: #9B9997;
+
+  &:hover {
+    color: #A87B62;
+  }
 }
 
 .main-shop__link-pagination--active {
   color: #1D1613;
 }
-
-

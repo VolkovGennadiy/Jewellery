@@ -1,5 +1,5 @@
 .navigation {
-  min-height: 146px;
+  min-height: 185px;
   /* overflow-y: auto; */
 
   @media (max-width: $tablet-width) {
@@ -53,6 +53,10 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+
+  &:hover {
+    color: #A87B62;
+  }
 }
 
 .navigation__list {
@@ -95,9 +99,15 @@
 }
 
 .navigation__logo {
+  fill: #A87B62;
+
   @media (max-width: $mobile-width) {
     width: 52px;
     height: 52px;
+  }
+
+  &:hover {
+    fill: #FF7F50;
   }
 }
 
@@ -181,7 +191,7 @@
   display: none;
   width: 25px;
   height: 25px;
-  background-image: url('../../img/gamburger.svg');
+  background-image: url('../img/gamburger.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-color: #ffffff;
@@ -202,7 +212,7 @@
 }
 
 .navigation__button--tablet {
-  background-image: url('../../img/gamgurger-white.svg');
+  background-image: url('../img/gamgurger-white.svg');
   background-color: #A87B62;
 }
 
@@ -210,7 +220,7 @@
   display: none;
   width: 20px;
   height: 18px;
-  background-image: url('../../img/logkart.svg');
+  background-image: url('../img/logkart.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-color: #ffffff;
@@ -232,7 +242,7 @@
 
 .navigation__button-login--tablet {
   background-color: #A87B62;
-  background-image: url('../../img/cart-white.svg');
+  background-image: url('../img/cart-white.svg');
 }
 
 .navigation__search {
@@ -244,13 +254,17 @@
     content: '';
     width: 14px;
     height: 14px;
-    background-image: url('../../img/icon-search.svg');
+    background-image: url('../img/icon-search.svg');
     top: 3px;
     left: 2px;
   }
 
   @media (max-width: $tablet-width) {
     display: none;
+  }
+
+  &:hover {
+    opacity: 0.5;
   }
 }
 
@@ -271,6 +285,12 @@
   outline: none;
   padding-left: 32px;
   width: 176px;
+  color: #000000;
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .navigation__search--mobile {
@@ -283,7 +303,7 @@
   }
 
   &::before {
-    background-image: url('../../img/search-white.svg');
+    background-image: url('../img/search-white.svg');
 
     top: 13px;
     left: 12px;
@@ -309,6 +329,10 @@
   font-size: 14px;
   line-height: 21px;
   margin-right: 35px;
+
+  &:hover {
+    color: #A87B62;
+  }
 }
 
 .navigation__blockcart a, span {
@@ -321,4 +345,8 @@
 
 .navigation__cart {
   margin-right: 2px;
+
+  &:hover {
+    color: #A87B62;
+  }
 }

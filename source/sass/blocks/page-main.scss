@@ -1,14 +1,8 @@
-/* .page-main {
-  height: 3085px;
-
-  @media (max-width: $tablet-width) {
-    height: 3080px;
-  }
-} */
-
 .page-main--catalog {
   display: flex;
-  width: 86vw;
+  width: 100vw;
+  max-width: 1170px;
+  
   margin: 0 auto;
   justify-content: space-between;
   padding-top: 80px;

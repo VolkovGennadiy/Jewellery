@@ -5,6 +5,10 @@
   font-size: 16px;
   line-height: 130%;
   color: #ffffff;
+
+  &:hover {
+    color: #A87B62;
+  }
 }
 
 .footer-navigation__link span {
@@ -138,7 +142,7 @@
   position: relative;
 
   &::before {
-    background-image: url('../../img/facebook.svg');
+    background-image: url('../img/facebook.svg');
 
     @media (max-width: $mobile-width) {
       background-size: 60%;
@@ -150,7 +154,7 @@
   position: relative;
 
   &::before {
-    background-image: url('../../img/instagram.svg');
+    background-image: url('../img/instagram.svg');
   }
 }
 
@@ -158,7 +162,7 @@
   position: relative;
 
   &::before {
-    background-image: url('../../img/pinterest.svg');
+    background-image: url('../img/pinterest.svg');
   }
 }
 
@@ -166,6 +170,6 @@
   position: relative;
 
   &::before {
-    background-image: url('../../img/twitter.svg');
+    background-image: url('../img/twitter.svg');
   }
 }

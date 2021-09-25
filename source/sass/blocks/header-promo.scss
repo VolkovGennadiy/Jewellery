@@ -1,29 +1,45 @@
 .header-promo {
   width: 100%;
-  background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url('../../img/background-header-desktop.png');
+  background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url('../img/background-header-desktop.png');
   min-height: 463px;
   background-size: 100% 100%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-repeat: no-repeat;
   background-size: 100% 101%;
 
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url('../img/background-header-desktop2x.png');
+  }
+
   @media (max-width: $tablet-width) {
-    background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url('../../img/background-header-tablet.jpg');
+    background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url('../img/background-header-tablet.jpg');
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url('../img/background-header-tablet2x.jpg');
+    }
   }
 
   @media (max-width: $mobile-width) {
-    background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url('../../img/background-header-mobile.png');
+    background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url('../img/background-header-mobile.png');
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url('../img/background-header-mobile2x.png');
+    }
   }
 }
 
 .header-promo--catalog {
-  background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url('../../img/background-header-catalog.jpg');
+  background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url('../img/background-header-catalog.jpg');
   min-height: 261px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url('../img/background-header-catalog2x.jpg');
+  }
 }
 
 .header-promo__block {
-  padding-top: 181px;
+  padding-top: 143px;
 
   @media (max-width: $tablet-width) {
     padding-top: 182px;
